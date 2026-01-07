@@ -18,5 +18,5 @@ def index():
 @app.get("/health")
 def health():
     return {
-        "stts": "OK"
+        "status": "OK"
     }
