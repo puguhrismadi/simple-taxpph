@@ -15,3 +15,8 @@ def index():
         "message": "Hello World",
         "status": "FastAPI is running"
     }
+@app.get("/health")
+def health():
+    return {
+        "status": "OK"
+    }
