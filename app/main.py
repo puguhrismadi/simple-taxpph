@@ -20,3 +20,8 @@ def health():
     return {
         "status": "OK"
     }
+@app.get("/version")
+def version():
+    return {
+        "version": "0.0.1"
+    }
